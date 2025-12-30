@@ -1,0 +1,11 @@
+{
+  "id": "snapshot_20251230_223822",
+  "timestamp": "2025-12-30T22:38:22.792405",
+  "checksum": "fffecd4623d303065ad9ba1a88513be37f2484567cf4b1923516242fb3e1b069",
+  "data_size": 306,
+  "metadata": {
+    "chain_id": "testnet_001",
+    "version": "1.0.0",
+    "description": "Test snapshot"
+  }
+}

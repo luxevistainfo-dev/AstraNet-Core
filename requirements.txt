@@ -1,2 +1,15 @@
-# No external dependencies needed for CLI
-# Flask is optional for API
+# Core dependencies
+numpy>=1.21.0
+pandas>=1.3.0
+scikit-learn>=0.24.0
+flask>=2.0.0
+
+# Additional utilities
+requests>=2.26.0
+python-dotenv>=0.19.0
+matplotlib>=3.4.0  # Optional for visualization
+
+# Development
+pytest>=6.2.0
+black>=21.0.0
+flake8>=3.9.0
