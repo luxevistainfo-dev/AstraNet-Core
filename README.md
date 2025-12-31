@@ -1,16 +1,19 @@
-# AstraNet-Core
+# AstraNet-Core Minimal Real Blockchain
 
-Blockchain со AI слој за детекција на ризик, ботови и оптимизација.
+## Description
+This is a Minimal Real Blockchain integrated with AstraNet-Core:
+- Transactions + Mempool
+- Proof-of-Work mining
+- Local Testnet (2 nodes)
+- AI Analysis + Self-Healing + Green Mining Optimizer
+- Quantum-Resistant Validator
+- Cross-Chain Bridge
+- Marketplace Module
+- Sharding
 
-## Како да се пушти:
-1. `cd AstraNet-Core`
-2. `python3 -m venv venv`
-3. `source venv/bin/activate`
-4. `pip install -r requirements.txt`
-5. `python3 node.py`
+## How to Run
 
-## Команди во CLI:
-- `send` - креирај трансакција
-- `mine` - ископај блок
-- `status` - провери состојба
-- `exit` - излез
+1. Clone the repo:
+```bash
+git clone https://github.com/<your_username>/AstraNet-Core.git
+cd AstraNet-Core/AstraNet-Core
