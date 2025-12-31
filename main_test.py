@@ -58,6 +58,17 @@ tx2 = Transaction("Bob", "Charlie", 5)
 mempool.add_transaction(tx1)
 mempool.add_transaction(tx2)
 
+# --- Simulation: 30 Users, 50 Transactions ---
+users = [f"User_{i}" for i in range(1, 31)]
+import random
+
+for _ in range(50):
+    sender = random.choice(users)
+    receiver = random.choice([u for u in users if u != sender])
+    amount = random.randint(1, 100)
+    tx = Transaction(sender, receiver, amount)
+    mempool.add_transaction(tx)
+
 # --- Mine Block ---
 new_block = blockchain.mine_block(mempool.transactions)
 print("NEW BLOCK MINED:", new_block.__dict__)
