@@ -1,7 +1,3 @@
 class GreenMiningOptimizer:
-    def __init__(self):
-        pass
-
     def calculate(self, block):
-        # Simulate energy saving calculation
         return {"energy_saved_percent": 40, "carbon_negative": True}

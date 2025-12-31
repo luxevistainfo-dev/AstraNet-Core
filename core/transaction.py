@@ -1,5 +1,5 @@
 import time
-import hashlib
+import uuid
 
 class Transaction:
     def __init__(self, sender, receiver, amount):
@@ -7,8 +7,4 @@ class Transaction:
         self.receiver = receiver
         self.amount = amount
         self.timestamp = time.time()
-        self.tx_id = self.calculate_hash()
-
-    def calculate_hash(self):
-        raw = f"{self.sender}{self.receiver}{self.amount}{self.timestamp}"
-        return hashlib.sha256(raw.encode()).hexdigest()
+        self.tx_id = str(uuid.uuid4())

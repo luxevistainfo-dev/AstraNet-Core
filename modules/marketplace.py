@@ -1,3 +1,6 @@
 class Marketplace:
-    def list_service(self, name, price):
-        return {"service": name, "price": price, "status": "LISTED"}
+    def __init__(self):
+        self.services = {}
+
+    def list_service(self, service_name, price):
+        self.services[service_name] = {"price": price, "status": "LISTED"}

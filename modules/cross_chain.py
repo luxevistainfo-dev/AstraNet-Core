@@ -1,3 +1,3 @@
 class CrossChainBridge:
-    def relay(self, payload, target="Ethereum"):
-        return f"Relayed to {target}: {payload}"
+    def relay(self, payload):
+        return f"Relayed to Ethereum: {payload}"

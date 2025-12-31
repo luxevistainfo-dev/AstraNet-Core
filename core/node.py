@@ -1,18 +1,13 @@
-import socket
-import threading
+import time
 
 class Node:
-    def __init__(self, host, port):
-        self.host = host
+    def __init__(self, ip, port):
+        self.ip = ip
         self.port = port
+        self.running = False
 
     def start(self):
-        server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        server.bind((self.host, self.port))
-        server.listen()
-        print(f"Node running on {self.host}:{self.port}")
-        while True:
-            conn, addr = server.accept()
-            data = conn.recv(4096)
-            print("Received from", addr, ":", data.decode())
-            conn.close()
+        self.running = True
+        print(f"Node running on {self.ip}:{self.port}")
+        while self.running:
+            time.sleep(1)
