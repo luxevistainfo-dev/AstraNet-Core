@@ -15,5 +15,5 @@ This is a Minimal Real Blockchain integrated with AstraNet-Core:
 
 1. Clone the repo:
 ```bash
-git clone https://github.com/<your_username>/AstraNet-Core.git
+git clone https://github.com/luxevistainfo-dev/AstraNet-Core.git
 cd AstraNet-Core/AstraNet-Core
