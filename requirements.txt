@@ -13,3 +13,4 @@ matplotlib>=3.4.0  # Optional for visualization
 pytest>=6.2.0
 black>=21.0.0
 flake8>=3.9.0
+cryptography>=41.0.0
